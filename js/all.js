@@ -7,7 +7,7 @@ var tables = [];
 
 //將99乘法表加到陣列裡
 for(let i=2;i<10;i++){
-  let num = i - 2;
+  let index = i - 2;
   let table = [];
   table.push(`${i}`);
   for(let j=1;j<10;j++){
@@ -16,10 +16,9 @@ for(let i=2;i<10;i++){
     table.push(str);
   }
   //把所有99乘法表加到tables陣列
-  tables[num] = table;
+  tables[index] = table;
 }
 
-//console.log(tables.length)
 
 
 for(let k = 0;k<tables.length;k++){
@@ -37,15 +36,15 @@ for(let k = 0;k<tables.length;k++){
   for(let m = 0;m<tables[k].length;m++){
     //開頭數字
     if(m<1){
-      left.innerHTML += `<div class="h1 text-center text-primary text-shadow" style="line-height:1.14;">${tables[k][m]}</div>`
+      left.innerHTML += `<div class="font-size-lg text-center text-primary text-shadow" style="line-height:1.14;">${tables[k][m]}</div>`
     }
     //左欄1~3
     else if(m>0 && m<4){
-      left.innerHTML += `<div class="h3 text-primary">${tables[k][m]}</div>`
+      left.innerHTML += `<div class="font-size-sm text-primary">${tables[k][m]}</div>`
     }
     //右欄4~9
     else{
-      right.innerHTML += `<div class="h3 text-primary grid">${tables[k][m]}</div>`
+      right.innerHTML += `<div class="font-size-sm text-primary grid">${tables[k][m]}</div>`
     }
   }
 }

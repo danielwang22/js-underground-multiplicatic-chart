@@ -357,38 +357,64 @@ body {
   width: 100%;
 }
 
-.bg-thrid {
-  background-color: #D8D8D8;
-}
-
-.bg-primary {
-  background-color: #2EB738;
-}
-
 .border {
   border: thin solid #2EB738;
 }
 
-.h1 {
-  font-size: 8rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.h2 {
-  font-size: 3.5rem;
-}
-
-.h3 {
-  font-size: 1.5rem;
+.bg-primary {
+  background-color: #2EB738 !important;
 }
 
 .text-primary {
-  color: #2EB738;
+  color: #2EB738 !important;
 }
 
-.text-center {
-  text-align: center;
+.bg-secondary {
+  background-color: #F0F0F0 !important;
+}
+
+.text-secondary {
+  color: #F0F0F0 !important;
+}
+
+.bg-thrid {
+  background-color: #D8D8D8 !important;
+}
+
+.text-thrid {
+  color: #D8D8D8 !important;
+}
+
+.bg-while {
+  background-color: #FFFFFF !important;
+}
+
+.text-while {
+  color: #FFFFFF !important;
+}
+
+.font-size-none {
+  font-size: 0 !important;
+}
+
+.font-size-xs {
+  font-size: 1rem !important;
+}
+
+.font-size-sm {
+  font-size: 1.5rem !important;
+}
+
+.font-size-md {
+  font-size: 3.5rem !important;
+}
+
+.font-size-lg {
+  font-size: 8rem !important;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-shadow {

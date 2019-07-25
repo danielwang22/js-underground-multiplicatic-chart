@@ -5,6 +5,21 @@ $color-primary: #2EB738;
 $color-sceondary: #F0F0F0;
 $color-while: #FFFFFF;
 $color-thrid: #D8D8D8;
+$color-theme: (
+    primary:$color-primary,
+    secondary:$color-sceondary,
+    thrid:$color-thrid,
+    while:$color-while
+);
+
+$fontSize: (
+    none:0,
+    xs: 1rem,
+    sm: 1.5rem,
+    md: 3.5rem,
+    lg: 8rem
+);
+
 $breakpoints: (
   xl : 1200px,
   lg : 992px,
@@ -135,32 +150,27 @@ body {
 }
 
 //背景外框
-.bg-thrid{
-  background-color: $color-thrid;
-}
-.bg-primary{
-  background-color: $color-primary;
-}
 .border{
   border:thin solid $color-primary;
 }
+@each $theme,$color in $color-theme {
+  .bg-#{$theme}{
+      background-color: #{$color} !important;
+  }
+  .text-#{$theme}{
+      color: #{$color} !important;
+  }
+}
 
 //文字
-.h1{
-  font-size: 8rem;
-  box-sizing: border-box;
+//文字大小
+@each $size,$length in $fontSize {
+  .font-size-#{$size}{
+      font-size: #{$length} !important;
+  }
 }
-.h2{
-  font-size: 3.5rem;
-}
-.h3{
-  font-size: 1.5rem;
-}
-.text-primary{
-  color: $color-primary;
-}
-.text-center{
-  text-align: center;
+.text-right{
+  text-align: right;
 }
 .text-shadow{
   text-shadow: 4px 3px 0px $color-sceondary;
