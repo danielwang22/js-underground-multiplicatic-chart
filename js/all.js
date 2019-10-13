@@ -24,7 +24,7 @@ for(let i=2;i<10;i++){
 for(let k = 0;k<tables.length;k++){
   //先印出白色卡片
   tableview.innerHTML += 
-    `<div class="box table grid-xl-2 grid-md-3 grid-sm-6 d-flex flex-row justify-content-center align-items-center mb1 postion-relative">
+    `<div class="box table grid-xl-2 grid-lg-3 grid-md-3 grid-sm-6 d-flex flex-row justify-content-center align-items-center mb1 postion-relative">
   <div class="d-flex flex-column left${k}"></div>
   <div class="d-flex flex-column pl1 pt1 right${k}"></div>
   </div>`;

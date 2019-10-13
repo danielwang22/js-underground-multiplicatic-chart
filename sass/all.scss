@@ -30,7 +30,7 @@ $breakpoints: (
 @mixin breakpoint($point){
 
   @if $point == xl{
-    @media (max-width: 1400px){
+    @media (max-width: 1600px){
         @content;
     }
   }
@@ -78,7 +78,7 @@ body {
 
 //容器
 #container{
-  width: 100%;
+  //width: 100vw;
   height: 550px;
   padding: 80px 70px;
 }
